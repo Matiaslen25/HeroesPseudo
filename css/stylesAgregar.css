@@ -1,0 +1,132 @@
+body{
+    font-family: Roboto;
+}
+
+.registro{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 30px 0px;
+    height: 700px;
+}
+
+.agregar{
+    background-color: #00669F;
+    width: 50vw;
+    position: relative;
+    flex-direction: column;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.agregar h2{
+    color: #FBFFFD;
+    font-size: 2.5vw;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.agregar p{
+    color: #FBFFFD;
+    margin: 0%;
+    font-size: 1vw;
+}
+
+.agregar form{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.inputTextAgregar{
+    width: 90%;
+    line-height: 3em;   
+    border-radius: 10px; 
+}
+
+.mitad{
+    width: 40%;
+}
+
+.mitad select{
+    width: 90%;
+    height: 48px;    
+    border-radius: 10px; 
+}
+
+.mitad textarea{
+    height: 20vh;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.mitad textarea::placeholder {
+    padding: 0.7rem;
+}
+
+#foto::-webkit-file-upload-button {
+    font-size: 0.8vw;
+    text-align: left;
+    width: 70%;
+    border-radius: 0.5rem;
+    background-color: #CECECE;
+    height: 2.5em;
+    border: 0;
+    justify-self: center;
+}
+
+
+#poderes{
+    margin-right: 30px;
+    height: 20px;
+    width: 20px;
+}
+
+#tipo{
+    margin-right: 30px;
+    height: 20px;
+    width: 20px;
+}
+
+.checkboxP{
+    display: flex;
+    align-items: center;
+}
+
+#poderes:checked{
+    background-color: #34CEFF;
+}
+
+.radioP{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.agregar button{
+    background-color: #1CD1B0;
+    width: 40%;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.agregar button:active {
+    background-color: #001D2D;
+    color: #ffffff;
+}
+
+.requerido::before{
+    content: "*";
+}

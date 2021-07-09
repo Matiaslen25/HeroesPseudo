@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/stylesAgregar.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Heroes</title>
+</head>
+<body>
+    <header>
+        <div class="descuentos">
+            <p>20% de descuento en todos los productos!</p>
+        </div>
+    <div class="titulo">
+        <a href="index.html"><img src="img/logo_tienda.png"></a>
+        <h1>Card Super Héroes</h1>
+    </div>
+    <nav>
+        <ul type="none">
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Registrarme</a></li>
+            <li><a href="login.html">Ingresar</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="registro">
+        <div class="agregar">
+            <h2>¡Añadí tu súper!</h2>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+            <form action="" method="POST" class="">
+                <div class="row">
+                    <div class="mitad">
+                        <p><label for="nombre" class="requerido">Ingrese el nombre</label></p>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputTextAgregar" required>
+                    </div>
+                    <div class="mitad">
+                        <p><label for="especie" class="requerido">Ingrese la especie</label></p>
+                        <select required id="especie" name="especie">
+                            <option disabled selected value="">Especie</option>
+                            <option value="mutante">Mutante</option>
+                            <option value="deidad">Deidad</option>
+                            <option value="humanoide">Humanoide</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mitad">
+                        <p><label for="fecha">Ingrese la fecha</label></p>
+                        <input type="date" class="inputTextAgregar" id="fecha" name="fecha">
+                    </div>
+                    <div class="mitad">
+                        <p><label for="foto">Agregar foto</label></p>
+                        <input type="file" class="inputTextAgregar" id="foto" name="foto" accept=".jpg, .png">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mitad">
+                        <p><label for="descripcion">Ingrese la descripción</label></p>
+                        <textarea placeholder="Descripción" id="descripcion" ></textarea>
+                    </div>
+                    <div class="mitad">
+                        <p>Poderes</p>
+                        <p><label class="checkboxP"><input type="checkbox" name="poderes" id="poderes" value="volar">Volar</label></p>
+                        <p><label class="checkboxP"><input type="checkbox" name="poderes" id="poderes" value="superinteligencia">Superinteligencia</label></p>
+                        <p><label class="checkboxP"><input type="checkbox" name="poderes" id="poderes" value="laser">Vista de rayo láser</label></p>
+                        <p><label class="checkboxP"><input type="checkbox" name="poderes" id="poderes" value="billetera">Billetera gorda</label></p>
+                        <hr>
+                        <p>Tipo de personaje</p>
+                        <p><label class="radioP"><input type="radio" name="tipo" id="tipo" value="volar">Héroe / Heroína</label></p>
+                        <p><label class="radioP"><input type="radio" name="tipo" id="tipo" value="superinteligencia">Villano / Villana</label></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="submit">Añadir</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+        <a href="https://github.com/Matiaslen25/HeroesLogin" target="_blank"><img src="img/logo_github.png" alt="logo github"></a>
+    </footer>
+</body>
+</html>
